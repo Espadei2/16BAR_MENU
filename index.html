@@ -1,89 +1,298 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<title>16BAR MENU</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fantasy">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Fantasy", sans-serif}
+.w3-bar-block .w3-bar-item {padding: 35px;}
+</style>
+<body>
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/8.8.0/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/8.8.0/firebase-auth.js"></script>
-    <script defer src="/__/firebase/8.8.0/firebase-database.js"></script>
-    <script defer src="/__/firebase/8.8.0/firebase-firestore.js"></script>
-    <script defer src="/__/firebase/8.8.0/firebase-functions.js"></script>
-    <script defer src="/__/firebase/8.8.0/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/8.8.0/firebase-storage.js"></script>
-    <script defer src="/__/firebase/8.8.0/firebase-analytics.js"></script>
-    <script defer src="/__/firebase/8.8.0/firebase-remote-config.js"></script>
-    <script defer src="/__/firebase/8.8.0/firebase-performance.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">Back</a>
+  <a href="#Promotion" onclick="w3_close()" class="w3-bar-item w3-button">Promotion</a>
+  <a href="#Short" onclick="w3_close()" class="w3-bar-item w3-button">Short</a>
+  <a href="#Alcdrink" onclick="w3_close()" class="w3-bar-item w3-button">ALC Drink</a>
+  <a href="#Shooter" onclick="w3_close()" class="w3-bar-item w3-button">Shooter</a>
+  <a href="#Mixer" onclick="w3_close()" class="w3-bar-item w3-button">Mixer</a>
+  <a href="#Food" onclick="w3_close()" class="w3-bar-item w3-button">Food</a>
+  <a href="#SocialMedia" onclick="w3_close()" class="w3-bar-item w3-button">Social</a>
+</nav>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+<!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+    <div class="w3-button w3-padding-16 w3-right" onclick="w3_close()">☰</div>
+    <div class="w3-center w3-padding-16">16BAR</div>
+  </div>
+</div>
+  
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+<!-- First Promotion-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="Promotion">
+    <div class="w3-quarter">
+      <img src="/src/1Promotion/absolute.jpg" alt="absolute" width="150" height="190">
+      <h3>1600.-</h3>
+      <p>Enjoy with 1 Absolute Vodka & 4 Mixer & Ice Bucket</p>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+    <div class="w3-quarter">
+      <img src="/src/1Promotion/sangsom.jpg" alt="Pro Sangsom" width="150" height="190">
+      <h3>599.-</h3>
+      <p>Firm Touch of Thai Taste, 1 Sangsom & 4 Mixer & 1 Ice Bucket</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="/src/1Promotion/blend285.jpg" alt="Pro Blend285" width="150" height="190">
+      <h3>599.-</h3>
+      <p>The Famous one, 1 Btl Blend285 & 4 Mixer & 1 Ice Bucket</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="/src/1Promotion/3changbeer.jpg" alt="Triple Chang Beer" width="150" height="190">
+      <h3>349.-</h3>
+      <p>Select our local brand, 3 BTL of Chang Beer</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="/src/1Promotion/3leobeer.jpg"Triple Leo Beer" width="150" height="190">
+      <h3>349.-</h3>
+      <p>Select our local brand, 3 BTL of  Leo Beer</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="/src/1Promotion/jackCola.jpg" alt="Jack&Cola" width="150" height="190>
+      <h3>150.-</h3>
+      <p>Missing Tennessee,Here Jack&Cola</p>
+    </div>
+  </div>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+<!-- Second Short-->
+  <div class="w3-row-padding w3-padding-48 w3-center" id="Short">
+    <div class="w3-quarter">
+      <img src="/w3images/sandwich.jpg" alt="Jager Bomb" style="width:100%">
+      <h3>250.-</h3>
+      <p>Jager Bomb</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="/w3images/steak.jpg" alt="Absint" style="width:100%">
+      <h3>180.-</h3>
+      <p>Tequila Rose</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="/w3images/cherries.jpg" alt="Creme Liqueur" style="width:100%">
+      <h3>180.-</h3>
+      <p>Creme Liqueur</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="/w3images/wine.jpg" alt="House Vodka" style="width:100%">
+      <h3>90.-</h3>
+      <p>House Vodka</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="/w3images/wine.jpg" alt="House Tequila" style="width:100%">
+      <h3>90.-</h3>
+      <p>House Tequila</p>
+    </div>
+  </div>
+  
+  <!-- Third ALC DRINK-->
+  <div class="w3-row-padding w3-padding-32 w3-center" id="Alcdrink">
+    <div class="w3-quarter">
+      <img src="/w3images/sandwich.jpg" alt="Absolute" style="width:100%">
+      <h3>1500.-</h3>
+      <p>Absolute Vodka</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="/w3images/steak.jpg" alt="Sangsom" style="width:100%">
+      <h3>450.-</h3>
+      <p>1 BTL Sangsom</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="/w3images/cherries.jpg" alt="Blend285" style="width:100%">
+      <h3>450.-</h3>
+      <p>1 Btl Blend285</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="/w3images/wine.jpg" alt="Local Beer" style="width:100%">
+      <h3>150.-</h3>
+      <p>Chang Beer</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="/w3images/wine.jpg" alt="Local Beer" style="width:100%">
+      <h3>150.-</h3>
+      <p>Leo Beer</p>
+    </div>
+  </div>
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+   <!-- Fourth Shooter-->
+   <div class="w3-row-padding w3-padding-32 w3-center" id="Shooter">
+    <div class="w3-third">
+      <img src="/w3images/sandwich.jpg" alt="Top Rock" style="width:100%">
+      <h3>180.-</h3>
+      <p>Top Rock <br>Tequila,Orange,Grape Fruit syrup, Lime, White eggs</p>
+    </div>
+    <div class="w3-third">
+      <img src="/w3images/steak.jpg" alt="Down Rock" style="width:100%">
+      <h3>180.-</h3>
+      <p>Down Rock <br>Vodka, Absint, Triple sec, Grenadine, Pineapple, lime, Sweet Papaya</p>
+    </div>
+    <div class="w3-third">
+      <img src="/w3images/cherries.jpg" alt="Power Move" style="width:100%">
+      <h3>180.-</h3>
+      <p>Power Move <br>Mekhong, Passion Fruit, Lime, Sakura syrup, Yuzu Puree</p>
+    </div>
+  </div>
+
+  <!-- fifth Mixer-->
+  <div class="w3-row-padding w3-padding-32 w3-center" id="Mixer">
+    <div class="w3-quarter">
+      <img src="/w3images/sandwich.jpg" alt="Coke" style="width:100%">
+      <h3>35.-</h3>
+      <p>Coke</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="/w3images/steak.jpg" alt="Tonic" style="width:100%">
+      <h3>35.-</h3>
+      <p>Schweppe Tonic</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="/w3images/cherries.jpg" alt="Manao Soda" style="width:100%">
+      <h3>35.-</h3>
+      <p>Schweppe Manao Soda</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="/w3images/wine.jpg" alt="Water" style="width:100%">
+      <h3>35.-</h3>
+      <p>House Vodka</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="/w3images/wine.jpg" alt="Singha Soda" style="width:100%">
+      <h3>35.-</h3>
+      <p>Singha Soda</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="/w3images/wine.jpg" alt="Enegy Drink" style="width:100%">
+      <h3>35.-</h3>
+      <p>Enegy Drink</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="/w3images/wine.jpg" alt="Bucket of Ice" style="width:100%">
+      <h3>35.-</h3>
+      <p>Bucket of Ice</p>
+    </div>
+  </div>
+
+   <!-- Sixth Shooter-->
+   <div class="w3-row-padding w3-padding-32 w3-center" id="Food">
+    <div class="w3-third">
+      <img src="/w3images/sandwich.jpg" alt="เอ็นไก่ทอด" style="width:100%">
+      <h3>79.-</h3>
+      <p>Chicken Tendon <br>Deep Fried Chicken Tendon</p>
+    </div>
+    <div class="w3-third">
+      <img src="/w3images/steak.jpg" alt="เฟรนซ์ฟราย" style="width:100%">
+      <h3>79.-</h3>
+      <p>French Fried <br>Simple French Fried with Tasty Salt.</p>
+    </div>
+    <div class="w3-third">
+      <img src="/w3images/cherries.jpg" alt="ข้าวเกรียบ" style="width:100%">
+      <h3>79.-</h3>
+      <p>Crisp Rice <br>Deep Fried Crisp Rice with Yummy Sauce</p>
+    </div>
+    <div class="w3-third">
+      <img src="/w3images/cherries.jpg" alt="ทอดมันกุ้ง" style="width:100%">
+      <h3>79.-</h3>
+      <p>Shrimp Cake<br>Deep Fried Shrimp mixed Thai Herb&Spices</p>
+    </div>
+    <div class="w3-third">
+      <img src="/w3images/cherries.jpg" alt="แหนมเอ็นไก่" style="width:100%">
+      <h3>89.-</h3>
+      <p>Sour Pork <br>Sour Pork mixed with Chicken Tendon</p>
+    </div>
+    <div class="w3-third">
+      <img src="/w3images/cherries.jpg" alt="ข้าวผัดกระเพราหมู/ไก่" style="width:100%">
+      <h3>79.-</h3>
+      <p>Pad Kra Praw<br>Rice and Stir fried chicken or Pork with Thai Basil and Chilli</p>
+    </div>
+    <div class="w3-third">
+      <img src="/1Promotion/Absolute Vodka.jpg" alt="ไข่ดาว" style="width:100%">
+      <h3>10.-</h3>
+      <p>Fried Egg<br>Slowly Lazy Fried Egg</p>
+    </div>
+  </div>
+    
+ 
+    
+
+  
+  
+  <hr id="SocialMedia">
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32 w3-center">  
+    <h3>About Us</h3><br>
+    <img src="/w3images/chef.jpg" alt="" class="w3-image" style="display:block;margin:auto" width="800" height="533">
+    <div class="w3-padding-32">
+      <h4><b>Small Club In Phuket</b></h4>
+      <h6><i>With Passion For Create Small Space to Hang out.</i></h6>
+      <p>We are the team that Pround to Present HipHop Bar, That can be a community and Create many relationshop Also Present Local Experience and Tasty Style</p>
+    </div>
+  </div>
+  <hr>
+  
+  <!-- Footer -->
+  <footer class="w3-row-padding w3-padding-32">
+    <div class="w3-third">
+      <h3>Thank You</h3>
+      <p>For comming here, we hope we can be a part of your experience trip in phuket.</p>
+      <p>By 16BAR Team </p>
+    </div>
+  
+    <div class="w3-third">
+      <h3>Contact Us</h3>
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16">
+          <img src="/w3images/workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
+          <span><a href = "https://www.facebook.com/16barhiphopbar" target ="_blank">Facebook</a></span><br>
+          <span>Thank you for any Feed back</span>
+        </li>
+        <li class="w3-padding-16">
+          <img src="/w3images/workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
+          <span><a href = "https://www.tripadvisor.co/Restaurant_Review-g1215781-d23515969-Reviews-16Bar-Phuket_Town_Phuket.html" target ="_blank">Tripadvisor</a></span><br>
+          <span>Write down you journal.</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-third w3-serif">
+      <h3>POPULAR TAGS</h3>
+      <p>
+        <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Dinner</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Salmon</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">France</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Drinks</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Flavors</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Cuisine</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Chicken</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Dressing</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Fried</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Fish</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Duck</span>
+      </p>
+    </div>
+  </footer>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
 </html>
